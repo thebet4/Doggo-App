@@ -1,31 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders <Container /> correctly 1`] = `
-<RNCSafeAreaView
-  edges={
-    Array [
-      "bottom",
-      "left",
-      "right",
-      "top",
-    ]
-  }
+exports[`renders <WelcomeScreen /> correctly 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
   style={
     Array [
       Object {
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "paddingBottom": 16,
-        "paddingLeft": 40,
-        "paddingRight": 40,
-        "paddingTop": 16,
+        "height": "100%",
+        "width": "100%",
       },
     ]
   }
 >
-  <Text>
-    Welcome Screen
-  </Text>
-</RNCSafeAreaView>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": "100%",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  />
+  <RNCSafeAreaView
+    edges={
+      Array [
+        "bottom",
+        "left",
+        "right",
+        "top",
+      ]
+    }
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "flex-end",
+          "marginBottom": 64,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Inter_600SemiBold",
+            "fontSize": 16,
+            "marginBottom": 64,
+          },
+        ]
+      }
+    >
+      Welcome to Doggo
+    </Text>
+    <ActivityIndicator
+      color="#011B30"
+      size="large"
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    />
+  </RNCSafeAreaView>
+</View>
 `;

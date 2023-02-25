@@ -1,15 +1,15 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import { WelcomeScreen } from "@layout/screens/auth";
+import { Loading } from "@layout/components/atoms";
 import { ThemeProvider } from "styled-components/native";
 import light from "@config/theme/light";
 
-it(`renders <WelcomeScreen /> correctly`, () => {
+it(`renders <Loading /> correctly`, () => {
   const tree = renderer
     .create(
       <ThemeProvider theme={light}>
-        <WelcomeScreen />
+        <Loading />
       </ThemeProvider>
     )
     .toJSON();

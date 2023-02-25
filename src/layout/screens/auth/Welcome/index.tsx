@@ -1,12 +1,15 @@
-import { Container } from "@layout/components/atoms";
 import React from "react";
-import { Text } from "react-native";
+import { Content, TitleText, WaveContainer } from "./styles";
+import { Loading } from "@layout/components/atoms";
 
 const WelcomeScreen = () => {
   return (
-    <Container>
-      <Text>Welcome Screen</Text>
-    </Container>
+    <WaveContainer source={require("../../../../../assets/images/splash.png")}>
+      <Content>
+        <TitleText>Welcome to Doggo</TitleText>
+        <Loading size="large" />
+      </Content>
+    </WaveContainer>
   );
 };
 
