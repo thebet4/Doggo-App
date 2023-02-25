@@ -6,10 +6,14 @@ import { ThemeProvider } from "styled-components/native";
 import light from "@config/theme/light";
 
 it(`renders <WelcomeScreen /> correctly`, () => {
+  const navigation = {
+    navigate: jest.fn(),
+  };
+  let route: any;
   const tree = renderer
     .create(
       <ThemeProvider theme={light}>
-        <WelcomeScreen />
+        <WelcomeScreen navigation={navigation as any} route={route} />
       </ThemeProvider>
     )
     .toJSON();
